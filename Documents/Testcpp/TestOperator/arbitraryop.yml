@@ -1,0 +1,15 @@
+project: arbfunc
+library: montblanc
+name: ArbFunc
+type_attrs:
+- "FT: {float, double} = DT_FLOAT"
+inputs:
+- ["uvw: FT", [null,null,3]]
+- ["antenna1: int32", [0]]
+- ["antenna2: int32", [0]]
+- ["frequency: FT", [null]]
+- ["func_params: FT", [null]]
+outputs: 
+- ["out_shape: FT", [null]]
+doc: > 
+    Predicts from arbitrary functions by computing the Fourier transform of a Gausian process analytically.
